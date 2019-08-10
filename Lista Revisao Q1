@@ -1,0 +1,55 @@
+#include <Stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+  float x,y resultado;
+  char sinal;
+  
+  printf("Digite os numeros a serem calculados : \n");
+  scanf(%f %f, &x , &y);
+  /*  
+  printf("Digite o segundo numero : \n");
+  scanf(%f, &y);
+  */
+  printf("Operacoes: 
+  \n Soma: +  
+  \n Subtração: -
+  \n Multiplicação: * 
+  \n Divisão: / \n");
+  printf("Digite a operacao desejada: ");
+  scanf(%c, &sinal)  
+  
+  switch (sinal)
+{
+   case +:
+     resultado <= x+y;
+     printf("O resultado da soma é: ",&resultado);
+   break;
+
+   case -:
+     resultado <= x-y;
+     printf("O resultado da subtracao é: ",&resultado);
+   break;
+  
+  case *:
+   resultado <= x*y;
+   printf("O resultado da multiplicacao é: ",&resultado);
+  break;
+
+   case /:
+    if(y != 0){
+    resultado <= x/y;
+    printf("O resultado da divisao é: ",&resultado);
+    }else
+    printf("O valor 2, divisor, nao pode ser 0 ");
+   break;
+
+   
+   
+   
+   default
+    printf("Operação inválida.");
+}
+  
+}
